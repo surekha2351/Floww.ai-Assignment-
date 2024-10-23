@@ -22,7 +22,7 @@ A RESTful API for managing personal financial records. Users can record their in
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/HARSHIT-SRIRAM/Floww.ai.git
+git clone https://github.com/surekha2351/Floww.ai-Assignment.git
 cd Floww.ai
 ```
 
@@ -63,16 +63,7 @@ Testing API Endpoints: Each request in the app.http file is preceded by comments
 
 ### 5. Postman Collection Link and Documentation
 
-https://www.postman.com/aerospace-participant-95845269/workspace/floww-ai
 
-![Screenshot (86)](https://github.com/user-attachments/assets/d26f954d-53d9-4ea5-93b6-311b06933f1b)
-![Screenshot (87)](https://github.com/user-attachments/assets/62caf924-32d2-4274-a551-d29b5cb46db0)
-![Screenshot (88)](https://github.com/user-attachments/assets/9e443849-7cd9-445d-86e4-9d6527824ff1)
-![Screenshot (89)](https://github.com/user-attachments/assets/d76b3bec-0175-4d25-898c-ad7ed369d69a)
-![Screenshot (90)](https://github.com/user-attachments/assets/b22b0097-582a-4ba5-b1bb-5a5086cce803)
-![Screenshot (92)](https://github.com/user-attachments/assets/cf35276b-558c-4449-b6cb-7b7e7a6e64c4)
-![Screenshot (93)](https://github.com/user-attachments/assets/913212db-cc1a-4fba-b4d2-9b888bc87802)
-![Screenshot (94)](https://github.com/user-attachments/assets/52887fd3-d9d3-443e-b844-9697f0ea9c8f)
 
 
 ### Important Points
