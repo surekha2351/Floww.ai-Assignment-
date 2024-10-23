@@ -26,9 +26,6 @@ git clone https://github.com/surekha2351/Floww.ai-Assignment.git
 cd Floww.ai
 ```
 
-example path [How it will look]
-
-C:filePathsWhereItIsStored\Floww.ai
 
 ### 2. Installing Dependencies
 
@@ -62,7 +59,6 @@ Open the app.http File: Navigate to the app.http file in project directory. This
 Testing API Endpoints: Each request in the app.http file is preceded by comments that describe its purpose. You can send any request by clicking on the "Send Request" link above each HTTP block. Here’s an overview of the requests included:
 
 ### 5. Postman Collection Link and Documentation
-
 
 
 
