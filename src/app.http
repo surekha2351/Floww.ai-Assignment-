@@ -1,0 +1,66 @@
+### REGISTER
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+  "username": "surekha",
+  "email": "surekha@gmail.com",
+  "password": "surekha1@9"
+}
+
+### LOGIN
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "surekha",
+  "password": "surekha1@9"
+}
+
+### Transaction Routes
+
+# Defined the token as a variable so it can be changed easily for all protected routes 
+# How to get auth, after running login there will be jwt token genrated copy that and replace that genrated token below to get authenticated for protected routes. 
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJIYXJzaGl0IiwiaWF0IjoxNzI5NjMwODM4LCJleHAiOjE3MzIyMjI4Mzh9.YZmkg97GtX8uOXuCyUjCJIBKe1jUim8OW64ErkBHzes
+
+### Add a new transaction for the authenticated user
+POST http://localhost:3000/txn/transaction
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "type": "expense",
+  "category": 1,
+  "amount": 6000,
+  "date": "2024-11-24",
+  "description": "Transportation"
+}
+
+### Retrieve all transactions for the authenticated user
+GET http://localhost:3000/txn/alltransaction?page=2&limit=2
+Authorization: Bearer {{token}}
+
+### Retrieve a specific transaction by ID for the authenticated user
+GET http://localhost:3000/txn/transactionbyid/2
+Authorization: Bearer {{token}}
+
+### Update a specific transaction by ID for the authenticated user
+PUT http://localhost:3000/txn/updatetransaction/5
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "type": "expense",
+  "category": 8,
+  "amount": 6000,
+  "date": "2024-10-23",
+  "description": "Transportation"
+}
+
+### Delete a transaction by ID for the authenticated user
+DELETE http://localhost:3000/txn/deletetransaction/2
+Authorization: Bearer {{token}}
+
+### Summary of user transactions
+GET http://localhost:3000/txn/summary?startDate=2024-01-01&endDate=2024-10-23
+Authorization: Bearer {{token}}
